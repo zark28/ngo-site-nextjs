@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import tw from "tailwind-styled-components/dist/tailwind";
 const BlogItem = ({ blogImg, blogHeading, blogText }) => {
