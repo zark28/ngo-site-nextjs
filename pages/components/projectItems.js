@@ -44,7 +44,7 @@ const ProjectItems = () => {
     <Wrapper>
       {projectList.map((item, index) => (
         <ProjectItem key={index} className="bg-secondaryColor-light">
-          <div className="z-10 absolute text-center px-4 top-52 md:top-10 text-4xl font-bold text-tertiaryColor">
+          <div className="z-10 absolute text-center px-4 top-20 md:top-10 text-4xl font-bold text-tertiaryColor">
             <span className="text-6xl">{item.tile}</span>
             <br />
             <span>{item.text}</span>
