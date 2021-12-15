@@ -9,4 +9,4 @@ const MainHeading = ({ text, clas }) => {
 };
 
 export default MainHeading;
-const Wrapper = tw.div` mt-40 mb-10 w-full`;
+const Wrapper = tw.div` mt-40 mb:mt-20 mb-10 w-full`;

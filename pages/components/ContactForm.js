@@ -31,22 +31,23 @@ const ContactForm = () => {
             </select>
             <input className={inputClass} type="tel" placeholder="Phone" />
           </Span>
-          <span>
-            <textarea className=" bg-tertiaryColor w-full h-40 my-5"></textarea>
+          <Span>
+            <textarea className=" bg-tertiaryColor w-full px-2 h-40 my-5 "></textarea>
             <input
               className="bg-primaryColor"
               type="submit"
               value="SEND MESSAGE"
             />
-          </span>
+          </Span>
         </div>
+        <ContactImg src="./img/we5.jpg" alt="contact image" />
       </FormWrapper>
     </Wrapper>
   );
 };
 
 export default ContactForm;
-const Wrapper = tw.div`w-full bg-secondaryColor-light  relative  `;
-const FormWrapper = tw.div`p-4 z-10`;
-const Span = tw.div` w-full flex flex-wrap gap-10 items-center justify-between`;
-// const ContactImg = tw.img`absolute w-full h-full object-fill top-0 left-0`;
+const Wrapper = tw.div`w-full bg-secondaryColor-light  relative  flex flex-col items-center md: `;
+const FormWrapper = tw.div`p-4 z-10 md:grid md:grid-cols-2 md:items-center md:gap-5 `;
+const Span = tw.div` w-full flex flex-wrap gap-10 items-center justify-between md:justify-evenly`;
+const ContactImg = tw.img` w-full h-full object-fill hidden md:block `;

@@ -40,7 +40,7 @@ const AboutItems = () => {
 };
 
 export default AboutItems;
-const Wrapper = tw.div`w-full flex flex-col gap-10 px-4`;
+const Wrapper = tw.div`w-full flex flex-col gap-10 px-4 mb-10`;
 const AboutText = tw.div`w-full text-xl `;
 const AboutActivities = tw.div`flex-1 grid grid-cols-2 gap-10`;
 const Activity = tw.div`flex w-full items-center text-lg font-bold`;

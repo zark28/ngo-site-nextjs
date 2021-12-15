@@ -17,7 +17,7 @@ const ProjectItems = () => {
     },
     {
       tile: "1,200 ",
-      title: "ON-GOING PROJECTS",
+      text: "ON-GOING PROJECTS",
       link: "#empowerment",
       imgSrc: "/img/we4.jpg",
     },
@@ -44,7 +44,7 @@ const ProjectItems = () => {
     <Wrapper>
       {projectList.map((item, index) => (
         <ProjectItem key={index} className="bg-secondaryColor-light">
-          <div className="z-10 absolute text-center px-4 top-52 text-4xl font-bold text-tertiaryColor">
+          <div className="z-10 absolute text-center px-4 top-52 md:top-10 text-4xl font-bold text-tertiaryColor">
             <span className="text-6xl">{item.tile}</span>
             <br />
             <span>{item.text}</span>
@@ -61,6 +61,6 @@ const ProjectItems = () => {
 };
 
 export default ProjectItems;
-const Wrapper = tw.div`w-full h-auto  flex flex-col items-center gap-10`;
-const ProjectItem = tw.div`w-full flex items-center flex-col relative `;
+const Wrapper = tw.div`w-full h-auto  flex flex-col items-center gap-10 md:flex-row md:gap-5`;
+const ProjectItem = tw.div`w-full flex items-center flex-col relative  md:justify-center `;
 const ProjectImg = tw.img`h-full w-full object-fill`;

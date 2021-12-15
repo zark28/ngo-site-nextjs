@@ -12,7 +12,24 @@ const Header = ({ heroImg, heroAlt, heading, subHeading }) => {
         <Navbar />
       </Navigation>
       <ImageContainer>
-        <HeaderImage src={heroImg} layout="fill" alt={heroAlt} />
+        <HeaderImage
+          src={heroImg}
+          layout="responsive"
+          alt={heroAlt}
+          className=""
+        />
+        <HeaderImage
+          src={heroImg}
+          layout="responsive"
+          alt={heroAlt}
+          className="hidden md:block"
+        />
+        <HeaderImage
+          src={heroImg}
+          layout="responsive"
+          alt={heroAlt}
+          className="hidden md:block"
+        />
         <HeaderText heading={heading} subHeading={subHeading} />
       </ImageContainer>
     </Wrapper>
@@ -21,6 +38,6 @@ const Header = ({ heroImg, heroAlt, heading, subHeading }) => {
 
 export default Header;
 const Wrapper = tw.div` z-50 w-full flex flex-col items-center relative `;
-const ImageContainer = tw.div`w-ful relative`;
-const HeaderImage = tw.img``;
+const ImageContainer = tw.div`w-ful relative object-cover  md:grid md:grid-cols-3`;
+const HeaderImage = tw.img`w-full h-auto`;
 const Navigation = tw.div`z-50 w-full flex items-start absolute top-0 left-0 z-10 px-4 `;
